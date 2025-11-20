@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environment
+.env
+venv/
+.venv/
+
+# Flask
+instance/
+*.log
+
+# VS Code
+.vscode/
+
+# Byte-compiled / cache
+*.egg-info/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
