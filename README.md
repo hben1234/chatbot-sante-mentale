@@ -26,10 +26,10 @@ The primary SVM model was trained on the `mental_health.csv` dataset, utilizing 
 * `/templates & /static`: UI components and assets.
 
 ## 📸 Demo & Performance
-| Chatbot Interface | Model Accuracy |
-| :---: | :---: |
-| ![UI](assets/Screenshots/) | ![Accuracy](assets/Screenshots/model_accuracy) |
-| *Real-time support via Flask & Bootstrap* | *SVM Model Validation Metrics* |
+|  Model Accuracy |
+|  :---: |
+| ![Accuracy](assets/Screenshots/model_accuracy) |
+| *SVM Model Validation Metrics* |
 
 ---
 
