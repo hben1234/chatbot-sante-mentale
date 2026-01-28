@@ -116,7 +116,7 @@ pairs =[
 
 
 # Function to load the model
-def load_model(model_filename="backend/model/sentiment_modelSVM.pkl"):
+def load_model(model_filename="models/sentiment_modelSVM.pkl"):
     try:
         model = joblib.load(model_filename)
         print(f"Model loaded from {model_filename}")

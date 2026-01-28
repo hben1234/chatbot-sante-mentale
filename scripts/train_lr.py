@@ -6,13 +6,11 @@ import contractions
 import re
 import pandas as pd
 from nltk.corpus import stopwords
-import nltk
-nltk.download('stopwords')
 import joblib
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
 
 # Function to read the dataset
-def load_dataset(file_path=r"C:\Users\houda\Desktop\website\backend\datasetes\mental_health.csv"):
+def load_dataset(file_path=r"C:\Users\houda\Desktop\website\data\mental_health.csv"):
     return pd.read_csv(file_path)
 
 # Function to clean and preprocess the text
@@ -37,7 +35,7 @@ def split_dataset(X, y, test_size=0.2, random_state=42):
 def create_pipeline():
     return Pipeline([
         ('tfidf', TfidfVectorizer()),
-        ('clf', DecisionTreeClassifier())
+        ('clf', LogisticRegression())
     ])
 
 # Function to generate the classification report
@@ -71,7 +69,7 @@ def main():
     print("Classification Report:\n", report)
 
     # Save the model
-    save_model(model, "sentiment_modelDT.pkl")
+    save_model(model, "sentiment_modelLR.pkl")
 
 # Execute the main function
 if __name__ == "__main__":

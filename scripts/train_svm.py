@@ -10,7 +10,7 @@ import joblib
 from sklearn.svm import SVC
 
 # Function to read the dataset
-def load_dataset(file_path=r"C:\Users\houda\Desktop\website\backend\datasetes\mental_health.csv"):
+def load_dataset(file_path=r"C:\Users\houda\Desktop\website\data\mental_health.csv"):
     return pd.read_csv(file_path)
 
 # Function to clean and preprocess the text
